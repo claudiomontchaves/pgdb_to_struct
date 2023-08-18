@@ -1,0 +1,23 @@
+[package]
+name = "pgdb_to_struct"
+version = "0.1.0"
+edition = "2021"
+description = "A Rust cli application for reading application properties from a file."
+license = "MIT"
+readme = "README.md"
+keywords = ["cli", "postgres", "database", "struct", "generator"]
+categories = ["data-structures"]
+repository = "https://github.com/claudiomontchaves/app_properties"
+documentation = "https://docs.rs/app_properties"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+app_properties = "0.1.2"
+tokio = { version = "1.28.2", features = ["full"] }
+sqlx = { version = "0.7.1", features = [
+    "runtime-tokio-rustls",
+    "postgres",
+    "uuid",
+] }
+uuid = "1.4.1"
