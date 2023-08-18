@@ -2,7 +2,7 @@
 name = "pgdb_to_struct"
 version = "0.1.0"
 edition = "2021"
-description = "A Rust cli application for reading application properties from a file."
+description = "A Rust CLI application to generate Rust struct files from Postgres database tables."
 license = "MIT"
 readme = "README.md"
 keywords = ["cli", "postgres", "database", "struct", "generator"]
