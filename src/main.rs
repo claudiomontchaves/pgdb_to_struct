@@ -145,7 +145,7 @@ fn to_rust_type(pg_type: &str) -> &str {
         pg_type if pg_type.starts_with("char") => "String",
         pg_type if pg_type.starts_with("varchar") => "String",
         "text" => "String",
-        pg_type if pg_type.starts_with("timestamp") => "chrono::DateTime",
+        pg_type if pg_type.starts_with("timestamp") => "chrono::DateTime<chrono::Utc>",
         "date" => "chrono::NaiveDate",
         pg_type if pg_type.starts_with("time") => "chrono::NaiveTime",
         "bool" => "bool",

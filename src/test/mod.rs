@@ -24,7 +24,7 @@ fn to_rust_type_test() {
     assert_eq!(to_rust_type("char"), "String");
     assert_eq!(to_rust_type("varchar"), "String");
     assert_eq!(to_rust_type("text"), "String");
-    assert_eq!(to_rust_type("timestamp"), "chrono::DateTime");
+    assert_eq!(to_rust_type("timestamp"), "chrono::DateTime<chrono::Utc>");
     assert_eq!(to_rust_type("date"), "chrono::NaiveDate");
     assert_eq!(to_rust_type("time"), "chrono::NaiveTime");
     assert_eq!(to_rust_type("bool"), "bool");
