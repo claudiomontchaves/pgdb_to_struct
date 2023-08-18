@@ -1,8 +1,8 @@
 [package]
 name = "pgdb_to_struct"
-version = "0.1.1"
+version = "0.1.2"
 edition = "2021"
-description = "A Rust CLI application to generate Rust struct files from Postgres database tables."
+description = "A Rust CLI application to generate Rust struct files from PostgreSQL database tables."
 license = "MIT"
 readme = "README.md"
 keywords = ["cli", "postgres", "database", "struct", "generator"]

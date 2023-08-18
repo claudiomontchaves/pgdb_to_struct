@@ -164,3 +164,6 @@ fn prepare_gen_folder() {
     }
     fs::create_dir(folder_name).unwrap();
 }
+
+#[cfg(test)]
+mod test;

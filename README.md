@@ -1,8 +1,8 @@
 # pgdb_to_struct
 
-This is a Rust CLI application to generate Rust struct files from Postgres database tables.
+This is a **Rust CLI** app to generate Rust **struct files** from **PostgreSQL** database tables.
 
-Let's assume we have a Postgres database with the following tables:
+Let's assume we have a PostgreSQL database with the following tables:
 
 ```sql
 CREATE TABLE public.customer (
